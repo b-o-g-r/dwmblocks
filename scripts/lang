@@ -4,7 +4,7 @@ lang=" $(xset -q | grep -i "led mask" | grep -o "....1...")"
 
 if [ -z $lang ]
 then
-    echo -e "US"
+    echo -e "US "
 else
-    echo -e "BG"
+    echo -e "BG "
 fi
