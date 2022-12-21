@@ -12,5 +12,6 @@ clean:
 install: output
 	mkdir -p $(DESTDIR)$(PREFIX)/bin
 	install -m 0755 dwmblocks $(DESTDIR)$(PREFIX)/bin/dwmblocks
+	cp ./scripts/* $(DESTDIR)$(PREFIX)/bin/
 uninstall:
 	rm -f $(DESTDIR)$(PREFIX)/bin/dwmblocks
