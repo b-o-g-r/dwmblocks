@@ -1,4 +1,4 @@
 #! /bin/bash 
 
-mem="$(free -h | awk '/^Mem:/ {print $3 "/" $2}')"
-echo -e "$mem RAM "
+mem="$(free -h | awk '/^Mem:/ {print substr($3, 1, length($3)-1) "/" substr($2, 1, length($2)-1)}')"
+echo -e "$mem "
