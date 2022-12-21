@@ -1,2 +1,2 @@
-# dwmblocks
+# DWMBlocks
 Personal DWMBlocks Setup
