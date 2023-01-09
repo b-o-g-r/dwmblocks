@@ -1,13 +1,15 @@
-//Modify this file to change what commands output to your statusbar, and recompile using the make command.
+// Modify this file to change what commands output to your statusbar, and
+// recompile using the make command.
 static const Block blocks[] = {
-	/*Icon*/ /*Command*/	 	                            /*Update Interval*/	/*Update Signal*/
+    /*Icon*/ /*Command*/ /*Update Interval*/ /*Update Signal*/
 
-	{" ", "lang",	 1,		              1},
+    {" 🌐 ", "lang", 1, 1},
 
-	{" VOL ", "volume",     0,		              2},
+    {"🎧 ", "volume", 0, 2},
 
-	{" ", "clock",	     60,	              0},
-};
+    {"🕑 ", "clock", 60, 0},
+    {"💻", "echo", 0, 3}};
 
-//sets delimeter between status commands. NULL character ('\0') means no delimeter.
-static char delim = '|';
+// sets delimeter between status commands. NULL character ('\0') means no
+// delimeter.
+static char delim = ' ';
