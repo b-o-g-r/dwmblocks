@@ -3,7 +3,7 @@
 static const Block blocks[] = {
     /*Icon*/ /*Command*/ /*Update Interval*/ /*Update Signal*/
 
-    {" 🌐 ", "lang", 1, 1},
+    {"| 🌐 ", "lang", 1, 1},
 
     {"🎧 ", "volume", 0, 2},
 
