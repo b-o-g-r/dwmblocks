@@ -1,5 +1,5 @@
 # DWMBlocks
-Personal DWMBlocks Setup
+Personal [DWMBlocks](https://github.com/torrinfail/dwmblocks) Setup
 
 ## Installation
 * Install DWM:
