@@ -2,6 +2,7 @@
 // recompile using the make command.
 static const Block blocks[] = {
     /*Icon*/ /*Command*/ /*Update Interval*/ /*Update Signal*/
+    {" 🖼", "pgrep webui >/dev/null & echo", 1, 4},
 
     {"| 🌐 ", "lang", 1, 1},
 
