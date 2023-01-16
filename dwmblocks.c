@@ -1,3 +1,4 @@
+#include "blocks.h"
 #include <X11/Xlib.h>
 #include <signal.h>
 #include <stdio.h>
@@ -19,9 +20,6 @@ int getstatus(char *str, char *last);
 void setroot();
 void statusloop();
 void termhandler(int signum);
-
-#include "blocks.h"
-
 static Display *dpy;
 static int screen;
 static Window root;
