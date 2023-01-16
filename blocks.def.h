@@ -6,6 +6,7 @@ typedef struct {
 	unsigned int interval;
 	unsigned int signal;
 } Block;
+
 static const Block blocks[] = {
     /*Icon*/ /*Command*/ /*Update Interval*/ /*Update Signal*/
     {(char*)"🔸", (char*)"pgrep webui >/dev/null && echo", 1, 4},
@@ -15,6 +16,7 @@ static const Block blocks[] = {
     {(char*)"🔋 ",(char*)"battery", 1, 6},
     {(char*)"📅 ",(char*)"clock", 60, 0},
 };
+
 // sets delimeter between status commands. NULL character ('\0') means no
 // delimeter.
 static char delim = ' ';
