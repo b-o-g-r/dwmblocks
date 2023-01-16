@@ -6,7 +6,7 @@ static const Block blocks[] = {
     {"♾", "pgrep freerdp >/dev/null && echo", 1, 5},
     {"🌐 ", "lang", 1, 1},
     {"🔊 ", "volume", 0, 2},
-    {"🔋 ", "battery", 0, 6},
+    {"🔋 ", "battery", 1, 6},
     {"📅 ", "clock", 60, 0},
 };
 // sets delimeter between status commands. NULL character ('\0') means no
