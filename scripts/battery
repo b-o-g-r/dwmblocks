@@ -1,2 +1,12 @@
 #!/bin/bash 
-[[ -f "/sys/class/power_supply/BAT0/capacity" ]] && battery="$(cat /sys/class/power_supply/BAT0/capacity)" && echo "🔋 ${battery}% "
+[[ -f "/sys/class/power_supply/BAT0/capacity" ]] && battery="$(cat /sys/class/power_supply/BAT0/capacity)" 
+
+icon=""
+
+[[ battery -gt 10 ]] && icon=""
+[[ battery -gt 20 ]] && icon=""
+[[ battery -gt 45 ]] && icon=""
+[[ battery -gt 70 ]] && icon=""
+[[ battery -gt 80 ]] && icon=""
+
+[[ -f "/sys/class/power_supply/BAT0/capacity" ]] && echo -e "${battery}% "

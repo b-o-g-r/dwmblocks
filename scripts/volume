@@ -1,4 +1,10 @@
 #!/bin/bash 
 
 vol="$(amixer get Master | tail -n1 | sed -r 's/.*\[(.*)%\].*/\1/')"
-echo "${vol}% "
+icon=""
+
+[[ vol -gt 10 ]] && icon=""
+[[ vol -gt 30 ]] && icon=""
+[[ vol -gt 50 ]] && icon=""
+
+echo -e "${icon} ${vol}% "
